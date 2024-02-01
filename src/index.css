@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+#quote-box{
+  border: none;
+  width: 40%;
+  min-height: 35%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 2px;
+  text-align: center;
+   
+}
+
+#text{
+  font-size:xx-large;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+#author{
+  margin: 1rem 2rem;
+  text-align: end;
+}
+
+#new-quote{
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+
+#new-quote:hover{
+  opacity: 0.7;
+}
+
+#tweet-quote{
+  margin-left: 3rem;
+}
+
+#tweet-quote:hover{
+  opacity: 0.7;
+}
+
+.animated{
+  animation: new_quote ease-in-out 2s ;
+}
+
+.new-text{
+  animation: new_text ease-in-out 1s;
+}
+
+
+@keyframes new_text {
+  0%{
+    visibility: visible;
+  }
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  90%{
+    opacity: 0.1;
+    visibility: visible;
+  }
+
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+@keyframes new_quote {
+  0%{
+    opacity: 0.4;
+  }
+  25%{
+    opacity: 0.5;
+  }
+
+  50%{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+  }
+}
